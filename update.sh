@@ -1,6 +1,9 @@
 #!/bin/bash
 source config.sh
 
+# Update game
+$steam_dir +login anonymous +force_install_dir $gmod_dir +app_update 4020 +quit
+
 # Get latest cfgs
 git pull
 
